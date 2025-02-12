@@ -1,0 +1,121 @@
+@media screen and (max-width: 1024px) {
+    .hero {
+        gap: 1rem;
+    }
+
+    .hero-content__title {
+        font-size: 48px;
+    }
+
+    .hero-content__subtitle {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero__img-desktop {
+        display: none;
+    }
+
+    .hero__img-mob {
+        display: block;
+        background-image: url('https://1med.tv/upload/medialibrary/e4b/63h5d9ba9dibs15zcmu04nukfn1vdlym/Frame-427319250-1.webp');
+        width: 100%;
+        min-height: 416px;
+        max-height: 416px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content {
+        min-height: 416px;
+    }
+
+    .course {
+        flex-wrap: wrap;
+        flex-basis: 48%;
+        flex-direction: column;
+    }
+
+    .course-info {
+        flex-grow: 1;
+    }
+
+    .course-info__bottom {
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .course-info__bottom_items {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .course-info__bottom .price {
+        width: 100%;
+    }
+
+    .course-info__bottom-links a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .hero {
+        margin-top: 0;
+    }
+
+    .hero__img-mob {
+        background-size: contain;
+    }
+
+    .advantages {
+        margin-top: 0;
+    }
+
+    .advantages-items {
+        grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+        grid-gap: 32px;
+        padding: 0 20px;
+    }
+
+    .advantages-list {
+        min-height: auto;
+    }
+
+    .advantages-list li:nth-of-type(2) {
+        font-size: 14px;
+    }
+
+    .advantages-list li:nth-of-type(3) {
+        font-size: 14px;
+    }
+
+    .courses {
+        margin-top: 50px;
+    }
+
+    .course {
+        flex-basis: 100%;
+    }
+
+    .course-info__bottom .price {
+        width: 100%;
+    }
+
+    .course-info__bottom-links a {
+        width: 100%;
+    }
+
+    .reviews {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
